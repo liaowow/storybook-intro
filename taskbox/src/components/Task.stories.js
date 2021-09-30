@@ -7,7 +7,7 @@ export default {
 }
 
 const Template = args => <Task {...args} />
-
+// Template.bind({}) is a standard JavaScript technique for making a copy of a function. We use this technique to allow each exported story to set its own properties, but use the same implementation.
 export const Default = Template.bind({});
 Default.args = {
   task: {
